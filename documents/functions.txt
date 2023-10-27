@@ -1,0 +1,37 @@
+
+videoInfo(videoId) -> 
+{
+    "title" : string
+    "views" : string 
+    "keywords" : List<string>
+    "likes" : string
+    "imageLink" : string
+    "link" : string
+}
+
+channelInfo(channelId) ->
+{
+    "title" : string
+    "subscribers": string
+    "details": string
+    "countries": string
+    "imageLink" : string
+    "link" : string
+}
+
+playlist(channelId) -> List<videoInfo>
+
+channelList(q, depth) -> videosSearch(q, depth) -> channelInfo(channelId) ->
+{
+    List<{ 
+    channelId : 
+        {
+            "info": channelInfo
+            "videos": List<videoInfo>
+        }
+    }>
+}
+
+videoList(q, channelId) -> (playlist(channelId), q) -> List<videoInfo>
+
+
