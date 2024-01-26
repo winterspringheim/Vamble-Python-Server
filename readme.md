@@ -3,7 +3,7 @@
 
 ## Overview
 
-Vamble is an innovative application designed to offer users an immersive experience in exploring YouTube channels, providing extensive details, subscriber counts, video content, and user ratings on channels. This repository contains the Python backend server component of Vamble, responsible for interfacing with YouTube's data, performing web scraping, storing results in MongoDB, and serving processed data to the client application.
+Vamble is an innovative application designed to offer users a unique experience in exploring YouTube channels. This repository contains the Python backend server component of Vamble, responsible for interfacing with YouTube's data, performing web scraping, storing results in MongoDB, and serving processed data to the client application.
 
 ## Features
 
